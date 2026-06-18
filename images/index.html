@@ -10,14 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <style>
         body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            padding-bottom: 40px;
         }
 
         .responsive-title-large {
@@ -65,18 +62,21 @@
             padding: 15.8px 20px;
             margin-right: 4px;
         }
-
         .button-line-wrapper {
             display: flex;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             width: 100%;
             margin-top: 15px;
         }
 
         .button-line-side {
-            flex-grow: 1;
             height: 1px;
             background-color: rgba(108, 117, 125, 0.5);
+            width: 100%;
+            max-width: 240px;
+            margin-bottom: 0px; 
         }
 
         .small-click-btn {
@@ -90,73 +90,45 @@
             padding: 6px 14px;
             border-radius: 0px;
             white-space: nowrap;
-            flex-shrink: 0;
         }
 
         @media (max-width:991px) {
-                     
-            .last{
-    margin-left: 35vw;
-}
+            .last {
+                margin-left: 35vw;
+            }
         }
 
         @media (max-width:992px) {
-            .place {
-                width: 11rem;
-
-            }
-            .hrline{
+            .hrline {
                 width: 2vw;
                 margin-left: 30vw;
             }
-
-         
         }
 
         @media (max-width:768px) {
             .keefer {
                 margin-left: 20vw;
             }
-        .hrline{
-            width: 10vw;
-            margin-left: 30vw;
-        }
-.last{
-    margin-left: 35vw;
-}
+            .hrline {
+                width: 10vw;
+                margin-left: 30vw;
+            }
+            .last {
+                margin-left: 35vw;
+            }
             .down {
                 margin-left: 30vw;
             }
-            .learn{
+            .learn {
                 font-size: 1.2rem;
             }
-
-          
-           
         }
 
-        @media (max-width:450px) { .hrline{
+        @media (max-width:450px) {
+            .hrline {
                 width: 2vw;
                 margin-left: 20vw;
             }
-          
-placee{
-    margin-top: 3vw;
-}
-        }
-        /* @media (max-width:768px) {
-            .place {
-                margin-top: 5vw;
-                margin-left: 20vw;
-            }
-
-            .eee {
-                width: 2vw;
-            }
-        } */
-
-        fot{
-            margin-r: 10vw;
         }
     </style>
 </head>
@@ -165,19 +137,15 @@ placee{
     <header class="container-fluid px-3 px-md-4">
         <div class="row align-items-center justify-content-between py-2">
             <div class="col-12 col-md-6 text-center text-md-start">
-                <img src="logo.png" alt="Logo" class="img-fluid"
-                    style="max-height: 100px; width: auto; object-fit: contain;">
+                <img src="logo.png" alt="Logo" class="img-fluid" style="max-height: 100px; width: auto; object-fit: contain;">
             </div>
 
-            <div
-                class="col-12 col-md-5 d-flex flex-column align-items-center align-items-md-end justify-content-center text-center text-md-end mt-3 mt-md-0">
-                <h5 class="fw-bold mb-1"
-                    style="font-size: calc(1.1rem + 0.3vw); letter-spacing: 1px; color: rgb(155, 3, 0);">
+            <div class="col-12 col-md-5 d-flex flex-column align-items-center align-items-md-end justify-content-center text-center text-md-end mt-3 mt-md-0">
+                <h5 class="fw-bold mb-1" style="font-size: calc(1.1rem + 0.3vw); letter-spacing: 1px; color: rgb(155, 3, 0);">
                     CALL OUR OFFICE NOW!
                 </h5>
                 <div class="rounded-pill bg-dark my-1" style="height: 3px; width: 100%; max-width: 280px;"></div>
-                <h1 class="fw-black m-0 p-0"
-                    style="font-size: calc(1.5rem + 1vw); font-weight: 900; letter-spacing: 2px; font-family: Arial, Helvetica, sans-serif;">
+                <h1 class="fw-black m-0 p-0" style="font-size: calc(1.5rem + 1vw); font-weight: 900; letter-spacing: 2px; font-family: Arial, Helvetica, sans-serif;">
                     540.433.6906
                 </h1>
                 <p class="m-0 fw-medium" style="font-size: calc(0.85rem + 0.2vw); color: rgba(24, 24, 24, 0.610);">
@@ -187,14 +155,9 @@ placee{
         </div>
     </header>
 
-
-
-
     <nav class="navbar navbar-expand-md navbar-dark p-0" style="background-color: #7d0401; min-height: 51px;">
         <div class="container-fluid pe-md-5 justify-content-end">
-            <button class="navbar-toggler border-0 my-2" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0 my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="responsive_menu_icon.png" alt="Menu" style="cursor: pointer; width: 30px;">
             </button>
 
@@ -223,110 +186,91 @@ placee{
         </div>
     </nav>
 
-
-
-
-    <div class="container-fluid my-4 px-3 px-md-4 maincard ">
+    <div class="container-fluid my-4 px-3 px-md-4 maincard">
         <div class="row g-4 justify-content-center align-items-stretch main-content-row">
 
-            <div class=" col-xxl-6 col-xl-6 col-lg-6 col-sm-10  col-md-10 d-flex ">
-                <img class="img-fluid w-100 object-cover" src="gurantee_banner.gif" alt="Guarantee Banner"
-                    style="box-shadow: 0px 40px 20px -35px rgba(0,0,0,0.5); border-radius: 4px; ">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-sm-10 col-md-10 d-flex">
+                <img class="img-fluid w-100 object-cover" src="gurantee_banner.gif" alt="Guarantee Banner" style="box-shadow: 0px 40px 20px -35px rgba(0,0,0,0.5); border-radius: 4px;">
             </div>
 
-            <div class=" col-xxl-6 col-xl-6 col-lg-6 col-sm-10 col-md-10 d-flex flex-column justify-content-between p-0"
-                style="background-image: url(form_bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; box-shadow: 0px 40px 20px -35px rgba(0,0,0,0.5); border-radius: 4px;">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-sm-10 col-md-10 d-flex flex-column justify-content-between p-0 py-3" style="background-image: url(form_bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; box-shadow: 0px 40px 20px -35px rgba(0,0,0,0.5); border-radius: 4px;">
 
-                <div class="row g-2 mb-3 ">
+                <div class="row g-2 mb-3 align-items-center">
                     <div class="col-5">
-                        <div class="quesr text-white  " style="width: 20vw; background-color: rgb(183, 6, 6);">
-                            <h1 class="  fw-black responsive-title-sm head "
-                                style="font-size: 3vw; font-family: 'Slabo', serif; font-weight: 800; letter-spacing: 1px; ">
+                        <div class="quesr text-white" style="width: auto; background-color: rgb(183, 6, 6); padding: 5px 10px;">
+                            <h1 class="fw-black responsive-title-sm m-0 text-center" style="font-family: 'Slabo', serif; font-weight: 800; letter-spacing: 1px;">
                                 QUESTIONS?
                             </h1>
                         </div>
                     </div>
 
-                    <div class="col-7 ps-3 ">
-                        <h2 class="m-0 lh-sm fs-4 fw-extrabold mt-2 ms-2"
-                            style="color: rgb(64, 64, 64); font-family: 'Slabo', serif; font-weight: 800; font-size: calc(1.2rem + 0.5vw) !important;">
-                            Have a <span class="fw-bold fs-1"
-                                style="color: rgb(22, 22, 115); display: inline-block;">Question</span> <br> About Your
-                            Case?
+                    <div class="col-7 ps-3">
+                        <h2 class="m-0 lh-sm fs-4 fw-extrabold" style="color: rgb(64, 64, 64); font-family: 'Slabo', serif; font-weight: 800; font-size: calc(1.1rem + 0.4vw) !important;">
+                            Have a <span class="fw-bold" style="color: rgb(22, 22, 115); display: inline-block;">Question</span> <br> About Your Case?
                         </h2>
                     </div>
                 </div>
 
-
-                <div class="w-100 mb-3 ps-4">
-                    <p class="m-0 text-muted responsive-text justify-content-center fs-5 "
-                        style="font-weight: 500; line-height: 1.4;">
+                <div class="w-100 mb-3 px-3 px-sm-5">
+                    <p class="m-0 text-muted fs-6" style="font-weight: 500; line-height: 1.4;">
                         Enter Your Information and get your questions answered quickly and discreetly or call us at :
                         <strong class="text-dark">540.433.6906</strong>
                     </p>
                 </div>
 
-                <div class="row align-items-center  mb-3 ps-5">
+                <div class="row align-items-center mb-3 px-3 px-sm-5 g-3">
                     <div class="col-12 col-md-7">
                         <div class="d-flex flex-column gap-2">
 
-                            <div class="row align-items-center g-1 ">
-                                <div class="col-3 col-sm-2 gap-5  CARDD">
-                                    <label class="form-label mb-0 fw-bold text-dark  "
-                                        style="font-size: 0.85rem ; ">NAME:</label>
+                            <div class="row align-items-center g-1">
+                                <div class="col-3">
+                                    <label class="form-label mb-0 fw-bold text-dark" style="font-size: 0.85rem;">NAME:</label>
                                 </div>
-                                <div class="col-9 col-sm-10">
-                                    <input type="text" class="form-control rounded-0 bg-white fw-bold shadow-sm"
-                                        style="height: 1.8rem; width: 14rem; font-size: 0.95rem; border: 1px solid #ccc; ">
+                                <div class="col-9">
+                                    <input type="text" class="form-control rounded-0 bg-white fw-bold shadow-sm w-100" style="height: 1.8rem; font-size: 0.95rem; border: 1px solid #ccc;">
                                 </div>
                             </div>
 
                             <div class="row align-items-center g-1">
-                                <div class="col-3 col-sm-2">
-                                    <label class="form-label mb-0 fw-bold text-dark"
-                                        style="font-size: 0.85rem;">EMAIL:</label>
+                                <div class="col-3">
+                                    <label class="form-label mb-0 fw-bold text-dark" style="font-size: 0.85rem;">EMAIL:</label>
                                 </div>
-                                <div class="col-9 col-sm-10">
-                                    <input type="email" class="form-control rounded-0 bg-white fw-bold shadow-sm"
-                                        style="height: 1.8rem; width: 14rem; font-size: 0.95rem; border: 1px solid #ccc;">
+                                <div class="col-9">
+                                    <input type="email" class="form-control rounded-0 bg-white fw-bold shadow-sm w-100" style="height: 1.8rem; font-size: 0.95rem; border: 1px solid #ccc;">
                                 </div>
                             </div>
 
                             <div class="row align-items-center g-1">
-                                <div class="col-3 col-sm-2">
-                                    <label class="form-label mb-0 fw-bold text-dark"
-                                        style="font-size: 0.85rem;">PHONE:</label>
+                                <div class="col-3">
+                                    <label class="form-label mb-0 fw-bold text-dark" style="font-size: 0.85rem;">PHONE:</label>
                                 </div>
-                                <div class="col-9 col-sm-10">
-                                    <input type="text" class="form-control rounded-0 bg-white fw-bold shadow-sm"
-                                        style="height: 1.8rem; width: 14rem; font-size: 0.95rem; border: 1px solid #ccc;">
+                                <div class="col-9">
+                                    <input type="text" class="form-control rounded-0 bg-white fw-bold shadow-sm w-100" style="height: 1.8rem; font-size: 0.95rem; border: 1px solid #ccc;">
                                 </div>
                             </div>
 
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-5  mt-3">
-                        <img src="confidential.png" alt="Confidential" class="img-fluid confidential-img placee"
-                            style=" width: 11rem; transform: rotate(9.5deg);">
+                    <!-- فکسڈ امیج کالم: یہاں فلیکس کلاسز اور مارجن ایڈ کر دیا ہے -->
+                    <div class="col-12 col-md-5 d-flex justify-content-center justify-content-md-end align-items-center mt-3 mt-md-0">
+                        <img src="confidential.png" alt="Confidential" class="img-fluid" style="width: 10rem; transform: rotate(9.5deg); margin-top: 15px;">
                     </div>
                 </div>
 
-                <div class="row mb-3 ms-5 place">
-                    <div class="col-12 place">
-                        <textarea class=" fw-bold " rows="3" placeholder="Tell us about your case here..."
-                            style="font-size: 0.95rem; color: #333; border: 1px solid #ccc;  width: 42vw;"></textarea>
+                <div class="row mb-3 px-3 px-sm-5">
+                    <div class="col-12">
+                        <textarea class="form-control rounded-0 fw-bold shadow-sm w-100" rows="3" placeholder="Tell us about your case here..." style="font-size: 0.95rem; color: #333; border: 1px solid #ccc;"></textarea>
                     </div>
                 </div>
 
-                <div class="w-100 d-flex flex-wrap align-items-center justify-content-center gap-2 mt-1 p-2">
-                    <p class="m-0 fst-italic text-secondary fw-semibold fs-5" style="font-size: 0.8rem;">
+                <div class="w-100 d-flex flex-wrap align-items-center justify-content-between gap-2 mt-1 px-3 px-sm-5">
+                    <p class="m-0 fst-italic text-secondary fw-semibold" style="font-size: 0.9rem;">
                         100% Privacy Guaranteed
                     </p>
-                    <button class="btn  rounded-0 text-white  fw-bold "
-                        style="background-color: rgb(183, 6, 6); font-size: 0.83rem; width: 40%; min-width: 180px;">
+                    <button class="btn rounded-0 text-white fw-bold" style="background-color: rgb(183, 6, 6); font-size: 0.83rem; min-width: 180px;">
                         <span>Ask US About Your Case</span>
-                        <i class="fa-solid fa-play" style="font-size: 0.65rem;"></i>
+                        <i class="fa-solid fa-play ms-1" style="font-size: 0.65rem;"></i>
                     </button>
                 </div>
 
@@ -334,16 +278,11 @@ placee{
         </div>
     </div>
 
-
-
-
     <div class="container-fluid my-5 px-3 px-md-4">
-        <div class="row g-4 justify-content-center abubakar" id="abubakar">
+        <div class="row g-4 justify-content-center">
 
-            <div class="col-lg-4 col-xl-4 col-md-5 col-lg-3 p-3 border-end border-muted"
-                style="border-width: 1px !important;">
-                <h1 class="m-0 text-dark fw-bold responsive-title-md"
-                    style="font-family: 'Noto Serif', serif; font-weight: 800;">
+            <div class="col-lg-4 col-xl-4 col-md-5 p-3 border-end border-muted" style="border-width: 1px !important;">
+                <h1 class="m-0 text-dark fw-bold responsive-title-md" style="font-family: 'Noto Serif', serif; font-weight: 800;">
                     CHARGED WITH <span style="color: #7d0401; font-weight: 800;">DUI?</span>
                 </h1>
                 <h3 class="mt-1 fw-bold responsive-title-sm" style="color: #7d0401;">
@@ -352,61 +291,38 @@ placee{
 
                 <div class="d-flex justify-content-between align-items-start mt-3 gap-2">
                     <div style="width: 65%;">
-                        <p class="mb-3 fw-semibold text-secondary responsive-text"
-                            style="font-family: Arial, Helvetica, sans-serif; line-height: 1.2;">
+                        <p class="mb-3 fw-semibold text-secondary responsive-text" style="font-family: Arial, Helvetica, sans-serif; line-height: 1.2;">
                             Being charged with a DUI can be scary. Get the help you deserve.
                         </p>
-                        <p class="m-0 fw-semibold text-secondary responsive-text"
-                            style="font-family: Arial, Helvetica, sans-serif; line-height: 1.2;">
+                        <p class="m-0 fw-semibold text-secondary responsive-text" style="font-family: Arial, Helvetica, sans-serif; line-height: 1.2;">
                             Click here to let us know how we can help you with your case.
                         </p>
                     </div>
-                    <img class="img-fluid" src="paste_board.gif" alt="Pasteboard"
-                        style="width: 30%; max-height: 100px; object-fit: contain;">
+                    <img class="img-fluid" src="paste_board.gif" alt="Pasteboard" style="width: 30%; max-height: 100px; object-fit: contain;">
                 </div>
 
                 <div class="button-line-wrapper">
-                    <div style="display: flex; flex-direction: colom; flex-direction: colom;">
-                        <div class="button">
-
-                            <div class="button-line-side "
-                                style="border: 0.1vw solid gray; width: 11rem; margin-left: 3rem;"></div>
-                            <div>
-                            </div>
-
-                            <button class="btn small-click-btn " style="margin-left: 5rem;">
-                                CLICK HERE <i class="fa-solid fa-play ms-1" style="font-size: 0.75em;"></i>
-                            </button>
-                        </div>
-                    </div>
-
+                    <div class="button-line-side"></div>
+                    <button class="btn small-click-btn">
+                        CLICK HERE <i class="fa-solid fa-play ms-1" style="font-size: 0.75em;"></i>
+                    </button>
                 </div>
             </div>
 
-            <div class="col-lg-4   col-xl-4 col-md-5 col-lg-5 p-3 border-end border-muted border-end-md-none"
-                style="border-width: 1px !important;">
-                <div class="row align-items-center mb-3 g-2 ">
-                    <div class="col-7 ps-2 ">
-                        <h1 class="m-0 text-dark fw-bold responsive-title-md"
-                            style="font-family: 'Noto Serif', serif; font-weight: 800;">
+            <div class="col-lg-4 col-xl-4 col-md-5 p-3 border-end border-muted" style="border-width: 1px !important;">
+                <div class="row align-items-center mb-3 g-2">
+                    <div class="col-7 ps-2">
+                        <h1 class="m-0 text-dark fw-bold responsive-title-md" style="font-family: 'Noto Serif', serif; font-weight: 800;">
                             LAW <span style="color: #7d0401; font-weight: 800;"> BLOG</span>
                         </h1>
-                        <p class="mt-2 fw-semibold text-secondary mb-0 responsive-text"
-                            style="font-family: Arial, Helvetica, sans-serif;">
+                        <p class="mt-2 fw-semibold text-secondary mb-0 responsive-text" style="font-family: Arial, Helvetica, sans-serif;">
                             Learn more about <br> Virginia Traffic Laws.
                         </p>
                         <div class="button-line-wrapper">
-                            <div class="button">
-
-                                <div class="button-line-side "
-                                    style="border: 0.1vw solid gray; width: 11rem; margin-left: 3rem;"></div>
-                                <div>
-                                </div>
-
-                                <button class="btn small-click-btn " style="margin-left: 5rem;">
-                                    CLICK HERE <i class="fa-solid fa-play ms-1" style="font-size: 0.75em;"></i>
-                                </button>
-                            </div>
+                            <div class="button-line-side"></div>
+                            <button class="btn small-click-btn">
+                                CLICK HERE <i class="fa-solid fa-play ms-1" style="font-size: 0.75em;"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="col-5 text-center">
@@ -418,70 +334,47 @@ placee{
 
                 <div class="row align-items-center mt-3 g-2">
                     <div class="col-7 ps-2">
-                        <h1 class="m-0 text-dark fw-bold responsive-title-md"
-                            style="font-family: 'Noto Serif', serif; font-weight: 800;">
+                        <h1 class="m-0 text-dark fw-bold responsive-title-md" style="font-family: 'Noto Serif', serif; font-weight: 800;">
                             CASE <span style="color: #7d0401; font-weight: 800;">RESULTS</span>
                         </h1>
-                        <p class="mt-2 fw-semibold text-secondary mb-0 responsive-text"
-                            style="font-family: Arial, Helvetica, sans-serif;">
+                        <p class="mt-2 fw-semibold text-secondary mb-0 responsive-text" style="font-family: Arial, Helvetica, sans-serif;">
                             See how we help our clients.
                         </p>
-                        <p class="fw-semibold text-secondary mb-0 responsive-text"
-                            style="font-family: Arial, Helvetica, sans-serif;">
+                        <p class="fw-semibold text-secondary mb-0 responsive-text" style="font-family: Arial, Helvetica, sans-serif;">
                             Read our latest case results.
                         </p>
-                        <div class="button-line-wrapper ">
-                            <div class="button">
-
-                                <div class="button-line-side "
-                                    style="border: 0.1vw solid gray; width: 11rem; margin-left: 3rem;"></div>
-                                <div>
-                                </div>
-
-                                <button class="btn small-click-btn " style="margin-left: 5rem;">
-                                    CLICK HERE <i class="fa-solid fa-play ms-1" style="font-size: 0.75em;"></i>
-                                </button>
-                            </div>
+                        <div class="button-line-wrapper">
+                            <div class="button-line-side"></div>
+                            <button class="btn small-click-btn">
+                                CLICK HERE <i class="fa-solid fa-play ms-1" style="font-size: 0.75em;"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="col-5 text-center">
-                        <img class="img-fluid" src="order_icon.gif" alt="Order Icon"
-                            style="max-width: 150px; width: 100%;">
+                        <img class="img-fluid" src="order_icon.gif" alt="Order Icon" style="max-width: 150px; width: 100%;">
                     </div>
                 </div>
             </div>
 
-
-            <div class="col-lg-3  col-xl-3 col-md-12   p-3">
+            <div class="col-lg-3 col-xl-3 col-md-12 p-3">
                 <div class="d-flex flex-row justify-content-center align-items-center gap-3 mb-3">
-                    <img class="img-fluid" src="qqq.gif" alt="Small Certificate"
-                        style="width: 45%; max-width: 90px; height: auto;">
-                    <img class="img-fluid" src="national_college_large.gif" alt="Large Certificate"
-                        style="width: 48%; max-width: 100px; height: auto;">
+                    <img class="img-fluid" src="qqq.gif" alt="Small Certificate" style="width: 45%; max-width: 90px; height: auto;">
+                    <img class="img-fluid" src="national_college_large.gif" alt="Large Certificate" style="width: 48%; max-width: 100px; height: auto;">
                 </div>
 
-                <div class="mt-2 text-center text-md-start  justify-content-center align-items-center   d-flex align-items-center gap-2 justify-content-center  flex-column">
-                    <h1 class="m-0 text-dark fw-bold responsive-title-md"
-                        style="font-family: 'Noto Serif', serif; font-weight: 800;">
+                <div class="mt-2 text-center text-md-start justify-content-center align-items-center d-flex gap-2 flex-column">
+                    <h1 class="m-0 text-dark fw-bold responsive-title-md text-center text-md-start" style="font-family: 'Noto Serif', serif; font-weight: 800;">
                         CERTIFICATE & <span style="color: #7d0401; font-weight: 800;">CREDENTIALS</span>
                     </h1>
-                    <p class="mt-2 fw-semibold text-secondary mb-0 responsive-text  "
-                        style="font-family: Arial, Helvetica, sans-serif; line-height: 1.3;">
+                    <p class="mt-2 fw-semibold text-secondary mb-0 responsive-text text-center text-md-start" style="font-family: Arial, Helvetica, sans-serif; line-height: 1.3;">
                         Keefer Law Firm has protected the rights of <br> Virginians for over 30 years.
                     </p>
 
-                    <div class="button-line-wrapper  d-flex align-items-center gap-2 justify-content-center  flex-column ">
-                        <div class="button keef ">
-
-                            <div class="button-line-side  keef"
-                                style="border: 0.1vw solid gray; width: 11rem; margin-left: 3rem;"></div>
-                            <div>
-                            </div>
-
-                            <button class="btn small-click-btn ooo " style="margin-left: 5rem;">
-                                CLICK HERE <i class="fa-solid fa-play ms-1 " style="font-size: 0.75em;"></i>
-                            </button>
-                        </div>
+                    <div class="button-line-wrapper">
+                        <div class="button-line-side"></div>
+                        <button class="btn small-click-btn">
+                            CLICK HERE <i class="fa-solid fa-play ms-1" style="font-size: 0.75em;"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -495,215 +388,132 @@ placee{
         </div>
     </div>
 
-
-
-
-
-
     <div class="container-fluid my-5 px-3 px-md-4">
         <div class="row g-4 justify-content-center align-items-start">
 
-            <div class=" col-md-4 col-lg-3 pe-lg-4 ">
-                <h2 class="learn m-0 text-secondary fw-bold mb-3 responsive-title-md"
-                    style="font-family: 'Merriweather', serif;">
+            <div class="col-md-4 col-lg-3 pe-lg-4">
+                <h2 class="learn m-0 text-secondary fw-bold mb-3 responsive-title-md text-center text-md-start" style="font-family: 'Merriweather', serif;">
                     PRACTICE <span style="color: #a30705; font-family: 'Playfair Display', serif;">AREAS</span>
                 </h2>
 
                 <div class="d-flex flex-column gap-3">
-                    <a href="#" class="d-block text-decoration-none text-white p-3 border-start border-danger"
-                        style="border-width: 6px !important; background: linear-gradient(to bottom, #8e8e8e, #6f6f6f); box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 4px 8px rgba(0,0,0,.35);">
+                    <a href="#" class="d-block text-decoration-none text-white p-3 border-start border-danger" style="border-width: 6px !important; background: linear-gradient(to bottom, #8e8e8e, #6f6f6f); box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 4px 8px rgba(0,0,0,.35);">
                         <div class="fw-bold sidebar-link-title">DUI & DWI</div>
-                        <div class="text-end fw-semibold sidebar-link-btn">LEARN MORE <i class="fa-solid fa-play ms-1"
-                                style="color: #7d0401; font-size: 0.85em;"></i></div>
+                        <div class="text-end fw-semibold sidebar-link-btn">LEARN MORE <i class="fa-solid fa-play ms-1" style="color: #7d0401; font-size: 0.85em;"></i></div>
                     </a>
 
-                    <a href="#" class="d-block text-decoration-none text-white p-3 border-start border-danger"
-                        style="border-width: 6px !important; background: linear-gradient(to bottom, #8e8e8e, #6f6f6f); box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 4px 8px rgba(0,0,0,.35);">
+                    <a href="#" class="d-block text-decoration-none text-white p-3 border-start border-danger" style="border-width: 6px !important; background: linear-gradient(to bottom, #8e8e8e, #6f6f6f); box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 4px 8px rgba(0,0,0,.35);">
                         <div class="fw-bold sidebar-link-title">RECKLESS DRIVING</div>
-                        <div class="text-end fw-semibold sidebar-link-btn">LEARN MORE <i class="fa-solid fa-play ms-1"
-                                style="color: #7d0401; font-size: 0.85em;"></i></div>
+                        <div class="text-end fw-semibold sidebar-link-btn">LEARN MORE <i class="fa-solid fa-play ms-1" style="color: #7d0401; font-size: 0.85em;"></i></div>
                     </a>
 
-                    <a href="#" class="d-block text-decoration-none text-white p-3 border-start border-danger"
-                        style="border-width: 6px !important; background: linear-gradient(to bottom, #8e8e8e, #6f6f6f); box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 4px 8px rgba(0,0,0,.35);">
+                    <a href="#" class="d-block text-decoration-none text-white p-3 border-start border-danger" style="border-width: 6px !important; background: linear-gradient(to bottom, #8e8e8e, #6f6f6f); box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 4px 8px rgba(0,0,0,.35);">
                         <div class="fw-bold sidebar-link-title">SPEEDING TICKETS</div>
-                        <div class="text-end fw-semibold sidebar-link-btn">LEARN MORE <i class="fa-solid fa-play ms-1"
-                                style="color: #7d0401; font-size: 0.85em;"></i></div>
+                        <div class="text-end fw-semibold sidebar-link-btn">LEARN MORE <i class="fa-solid fa-play ms-1" style="color: #7d0401; font-size: 0.85em;"></i></div>
                     </a>
 
-                    <a href="#" class="d-block text-decoration-none text-white p-3 border-start border-danger"
-                        style="border-width: 6px !important; background: linear-gradient(to bottom, #8e8e8e, #6f6f6f); box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 4px 8px rgba(0,0,0,.35);">
+                    <a href="#" class="d-block text-decoration-none text-white p-3 border-start border-danger" style="border-width: 6px !important; background: linear-gradient(to bottom, #8e8e8e, #6f6f6f); box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 4px 8px rgba(0,0,0,.35);">
                         <div class="fw-bold sidebar-link-title">TRAFFIC VIOLATIONS</div>
-                        <div class="text-end fw-semibold sidebar-link-btn">LEARN MORE <i class="fa-solid fa-play ms-1"
-                                style="color: #7d0401; font-size: 0.85em;"></i></div>
+                        <div class="text-end fw-semibold sidebar-link-btn">LEARN MORE <i class="fa-solid fa-play ms-1" style="color: #7d0401; font-size: 0.85em;"></i></div>
                     </a>
                 </div>
 
-                <h2 class="text-secondary fw-bold mt-4 mb-3 ms-2 responsive-title-sm learn"
-                    style="font-family: 'Merriweather', serif;">
+                <h2 class="text-secondary fw-bold mt-4 mb-3 responsive-title-sm learn text-center text-md-start" style="font-family: 'Merriweather', serif;">
                     LEARN <span style="color: #a30705; font-family: 'Playfair Display', serif;">MORE</span> ABOUT
                 </h2>
-                <div class="ps-4 mt-2  justify-content-center ms-5">
-                    <h3 class="fw-bold mb-2 text-muted sidebar-link-title"
-                        style="letter-spacing: 1px; cursor: pointer;">MENU</h3>
-                    <h3 class="fw-bold mb-2 text-muted sidebar-link-title"
-                        style="letter-spacing: 1px; cursor: pointer;">AREA</h3>
-                    <h3 class="fw-bold mb-2 text-muted sidebar-link-title"
-                        style="letter-spacing: 1px; cursor: pointer;">HERE</h3>
+                <div class="d-flex flex-column align-items-center justify-content-center mt-2 text-center w-100">
+                    <h3 class="fw-bold mb-2 text-muted sidebar-link-title" style="letter-spacing: 1px; cursor: pointer;">MENU</h3>
+                    <h3 class="fw-bold mb-2 text-muted sidebar-link-title" style="letter-spacing: 1px; cursor: pointer;">AREA</h3>
+                    <h3 class="fw-bold mb-2 text-muted sidebar-link-title" style="letter-spacing: 1px; cursor: pointer;">HERE</h3>
                 </div>
             </div>
 
-            <div class=" col-md-7 col-lg-6 px-lg-4 border-end-md border-muted"
-                style="border-width: 1px !important; text-align: justify;">
-                <h2 class="m-0 fw-bold mb-3 responsive-title-large gap-0"
-                    style="font-family: 'Merriweather', serif;color: gray;">
+            <div class="col-md-7 col-lg-6 px-lg-4" style="text-align: justify;">
+                <h2 class="m-0 fw-bold mb-3 responsive-title-large text-center text-md-start" style="font-family: 'Merriweather', serif;color: gray;">
                     &lt;H1&gt; PAGE TITLE HERE
                 </h2>
                 <p class="text-secondary lh-lg responsive-text" style="font-family: Arial, sans-serif;">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque fuga delectus non, enim tempore
-                    officia reprehenderit ullam dolore. Ullam amet soluta ipsum, ut temporibus id optio at earum
-                    aliquid, consequatur nesciunt, perferendis accusantium esse velit molestiae quo voluptatum
-                    necessitatibus alias error. Maxime aperiam libero, repellat tempore ad quia ipsa dolor harum,
-                    explicabo quidem ipsum voluptatem odio eius earum reiciendis in.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque fuga delectus non, enim tempore officia reprehenderit ullam dolore. Ullam amet soluta ipsum, ut temporibus id optio at earum aliquid, consequatur nesciunt, perferendis accusantium esse velit molestiae quo voluptatum necessitatibus alias error. Maxime aperiam libero, repellat tempore ad quia ipsa dolor harum, explicabo quidem ipsum voluptatem odio eius earum reiciendis in.
                 </p>
             </div>
 
-            <div class=" col-md-12 col-lg-3 ps-lg-4 d-flex flex-column gap-4 text-center text-md-start">
+            <div class="col-md-12 col-lg-3 ps-lg-4 d-flex flex-column gap-5 text-center">
 
-                <div class="pb-1  d-flex align-items-center gap-2 justify-content-center  flex-column">
-                    <h1 class="m-0 text-dark fw-bold responsive-title-md"
-                        style="font-family: 'Noto Serif', serif; font-weight: 800; line-height: 1.2;">
+                <div class="d-flex align-items-center justify-content-center flex-column text-center w-100">
+                    <h1 class="m-0 text-dark fw-bold responsive-title-md" style="font-family: 'Noto Serif', serif; font-weight: 800; line-height: 1.2;">
                         <span style="color: gray;"> CLIENT</span><br><span style="color: #7d0401;">TESTIMONIALS</span>
                     </h1>
-                    <p class="mt-2 mb-3 text-secondary fw-semibold responsive-text"
-                        style="font-family: 'Poppins', sans-serif; line-height: 1.3;">
+                    <p class="mt-2 mb-3 text-secondary fw-semibold responsive-text" style="font-family: 'Poppins', sans-serif; line-height: 1.3;">
                         Read what others say<br>about Keefer Law Firm.
                     </p>
-                    <div class="position-relative d-flex justify-content-center align-items-start w-100 mt-2"
-                        style="height: 45px;">
-
-                        <div class="button">
-                            <div class="button-line-side  downbtn"
-                                style="border: 0.1vw solid gray; width: 15rem; margin-left: rem;"></div>
-                            <div>
-                            </div>
-                            <button class="btn small-click-btn " style="margin-left: 5rem;">
-                                CLICK HERE <i class="fa-solid fa-play ms-1" style="font-size: 0.75em;"></i>
-                            </button>
-                        </div>
-
+                    <div class="button-line-wrapper">
+                        <div class="button-line-side"></div>
+                        <button class="btn small-click-btn">
+                            CLICK HERE <i class="fa-solid fa-play ms-1" style="font-size: 0.75em;"></i>
+                        </button>
                     </div>
                 </div>
 
-                <div class="pb-1  d-flex align-items-center gap-2 justify-content-center  flex-column">
-                                           <h1 class="m-0 text-dark fw-bold responsive-title-md "
-                            style="font-family :'Noto Serif', serif; font-weight: 800; line-height: 1.2;">
-                            <span style="color: gra  y;"> DOWNLOAD</span><br><span style="color: #7d0401;">FREE</span>
-                            <span style="color: gray;"> REPORTS</span>
-                        </h1>
-                        <p class="mt-2 mb-3 text-secondary fw-semibold responsive-text"
-                            style="font-family: 'Poppins', sans-serif; line-height: 1.3;">
-                            Discover the truth about<br>Virginia Law.
-                        </p>
-                    </div>
-                    <div class="position-relative d-flex justify-content-center align-items-start w-100 mt-2"
-                        style="height: 45px;">
-
-
-                        <div class="button">
-                            <div class="button-line-side  downbtn eee"
-                                style="border: 0.1vw solid gray; width: 15rem; margin-left: rem;"></div>
-                            <div>
-                            </div>
-                            <button class="btn small-click-btn " style="margin-left: 5rem;">
-                                CLICK HERE <i class="fa-solid fa-play ms-1" style="font-size: 0.75em;"></i>
-                            </button>
-                        </div>
-
-                    </div>
-                          <div class="pb-1">
-                    <h1 class="m-0 text-dark fw-bold responsive-title-md latest  "
-                        style="font-family :'Noto Serif', serif; font-weight: 800;  line-height: 1.2; ">
-                        <span class="last lates" style="color: gray;"> CONTACT</span> <br> <span class="last " style="color: #7d0401;">OUR</span> <span
-                            style="color: gray;"> CLIENT</span>
+                <div class="d-flex align-items-center justify-content-center flex-column text-center w-100">
+                    <h1 class="m-0 text-dark fw-bold responsive-title-md" style="font-family :'Noto Serif', serif; font-weight: 800; line-height: 1.2;">
+                        <span style="color: gray;"> DOWNLOAD</span><br><span style="color: #7d0401;">FREE</span>
+                        <br><span style="color: gray;"> REPORTS</span>
                     </h1>
-                    <p class="mt-2 mb-3 text-secondary fw-semibold responsive-text  last lates"
-                        style="font-family: 'Poppins', sans-serif; line-height: 1.3;">
+                    <p class="mt-2 mb-3 text-secondary fw-semibold responsive-text" style="font-family: 'Poppins', sans-serif; line-height: 1.3;">
+                        Discover the truth about<br>Virginia Law.
+                    </p>
+                    <div class="button-line-wrapper">
+                        <div class="button-line-side"></div>
+                        <button class="btn small-click-btn">
+                            CLICK HERE <i class="fa-solid fa-play ms-1" style="font-size: 0.75em;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-center flex-column text-center w-100">
+                    <h1 class="m-0 text-dark fw-bold responsive-title-md" style="font-family :'Noto Serif', serif; font-weight: 800; line-height: 1.2;">
+                        <span style="color: gray;"> CONTACT</span> <br> <span style="color: #7d0401;">OUR</span> <span style="color: gray;"> CLIENT</span>
+                    </h1>
+                    <p class="mt-2 mb-3 text-secondary fw-semibold responsive-text" style="font-family: 'Poppins', sans-serif; line-height: 1.3;">
                         Get your questions<br>answered right now.
                     </p>
-                    <div class="position-relative d-flex justify-content-center align-items-start w-100 mt-2"
-                        style="height: 45px;">
-
-                        <div class="button">
-                            <div class="button-line-side  downbtn"
-                                style="border: 0.1vw solid gray; width: 15rem; margin-left: rem;"></div>
-                            <div>
-                            </div>
-                            <button class="btn small-click-btn " style="margin-left: 5rem;">
-                                CLICK HERE <i class="fa-solid fa-play ms-1" style="font-size: 0.75em;"></i>
-                            </button>
-                        </div>
-
+                    <div class="button-line-wrapper">
+                        <div class="button-line-side"></div>
+                        <button class="btn small-click-btn">
+                            CLICK HERE <i class="fa-solid fa-play ms-1" style="font-size: 0.75em;"></i>
+                        </button>
                     </div>
                 </div>
 
                 <div class="mt-0 d-flex flex-column align-items-center justify-content-center gap-3 text-center w-100">
-
-                    <div class="d-flex flex-row align-items-center justify-content-center gap-2 w-100">
-                        <img class="img-fluid" src="qqq.gif" alt="Avvo Rating"
-                            style="width: 40%; max-width: 80px; height: auto; object-fit: contain;">
-                        <img class="img-fluid" src="national_college_large.gif" alt="National College"
-                            style="width: 40%; max-width: 80px; height: auto; object-fit: contain;">
+                    <div class="d-flex flex-row align-items-center justify-content-center gap-2 w-100 mb-2">
+                        <img class="img-fluid" src="qqq.gif" alt="Avvo Rating" style="width: 40%; max-width: 80px; height: auto; object-fit: contain;">
+                        <img class="img-fluid" src="national_college_large.gif" alt="National College" style="width: 40%; max-width: 80px; height: auto; object-fit: contain;">
                     </div>
 
                     <div class="social-wrapper w-100 mt-1">
-                        <h2 class="m-0 text-dark fw-bold text-center responsive-title-sm"
-                            style="font-family: 'Noto Serif', serif; letter-spacing: 0.5px;">
+                        <h2 class="m-0 text-dark fw-bold text-center responsive-title-sm" style="font-family: 'Noto Serif', serif; letter-spacing: 0.5px;">
                             FOLLOW <span style="color: #7d0401;">US</span>
                         </h2>
-                          <div class="button-line-side  downbtn hrline"
-                                style="border: 0.1vw solid gray; width: 15rem; margin-left: rem;"></div>
-                            <div>
+                        <div class="button-line-side downbtn hrline mx-auto my-2" style="border: 0.1vw solid gray; width: 15rem;"></div>
                         <div class="d-flex align-items-center gap-2 justify-content-center">
                             <a href="#"><img src="fb_icon.gif" alt="Facebook" style="width: 34px; height: auto;"></a>
                             <a href="#"><img src="google_icon.gif" alt="Google" style="width: 34px; height: auto;"></a>
-                            <a href="#"><img src="twitter_icon.gif" alt="Twitter"
-                                    style="width: 34px; height: auto;"></a>
-                            <a href="#"><img src="linked_icon.gif" alt="LinkedIn"
-                                    style="width: 34px; height: auto;"></a>
+                            <a href="#"><img src="twitter_icon.gif" alt="Twitter" style="width: 34px; height: auto;"></a>
+                            <a href="#"><img src="linked_icon.gif" alt="LinkedIn" style="width: 34px; height: auto;"></a>
                         </div>
                     </div>
-                </div>
-                </div>
-
-    
-              
                 </div>
 
             </div>
         </div>
-   
-    
-
-
-
-
-
-
+    </div>
 
     <div class="w-100" style="height: 45px; background-color: #8e0000; margin-top: 40px;"></div>
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
-
-
-
 </body>
 
 </html>
